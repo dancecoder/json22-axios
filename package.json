@@ -1,0 +1,44 @@
+{
+  "name": "json22-axios",
+  "version": "0.0.1",
+  "description": "Axios interceptors providing support to JSON22 data format in your applications",
+  "author": {
+    "name": "Dmitry Dutikov",
+    "email": "dancecoder@gmail.com"
+  },
+  "license": "MIT",
+  "repository": "github:dancecoder/json22-axios",
+  "keywords": [
+    "json",
+    "serialization",
+    "NaN",
+    "Infinity",
+    "BigInt",
+    "types",
+    "axios",
+    "interceptor",
+    "json22"
+  ],
+
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "json22": "^0.0.6"
+  },
+  "devDependencies": {
+    "mocha": "^9.2.0",
+    "@types/node": "^16.11.7"
+  },
+
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "import": "./index.js"
+    }
+  }
+}
